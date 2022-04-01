@@ -3,13 +3,13 @@ import Brother from '../Brother/Brother';
 import Myself from '../MySelf/Myself';
 import Sister from '../Sister/Sister';
 
-const Father = ({ house }) => {
+const Father = ({ house, gift }) => {
     return (
         <div>
             <h2>Father</h2>
             <p>House :{house}</p>
             <div style={{ display: 'flex' }}>
-                <Myself house={house}></Myself>
+                <Myself house={house} gift={gift}></Myself>
                 <Sister house={house}></Sister>
                 <Brother house={house}></Brother>
             </div>
