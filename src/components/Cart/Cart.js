@@ -6,6 +6,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
     //1. Element variable
     //2. Ternary operator
     //3.&& operator condition true hole kaj korbe
+    //4. || operator
 
     let command;
     if (cart.length === 0) {
@@ -27,6 +28,9 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
             }
             {
                 cart.length === 0 || <h3 className='orange'>Yay, you are buying</h3>
+            }
+            {
+                cart.length === 4 && <button className='orange'>Review Item</button>
             }
             {
                 cart.length === 3 && <div className='orange'>
